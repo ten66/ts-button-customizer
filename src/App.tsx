@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import Color from './components/Color';
 import Background from './components/Background';
+import Opacity from './components/Opacity';
 
 
 const App = () => {
@@ -33,6 +34,11 @@ const App = () => {
       <Background 
         onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
           setStyles({...styles, background: e.target.value});
+        }}
+      />
+      <Opacity 
+        onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
+          setStyles({...styles, opacity: e.target.value});
         }}
       />
     </div>
