@@ -5,6 +5,7 @@ import Background from './components/Background';
 import Opacity from './components/Opacity';
 import BorderRadius from './components/BorderRadius';
 import FontSize from './components/FontSize';
+import Disabled from './components/Disabled';
 
 const App = () => {
   const [styles, setStyles] = useState({
@@ -52,6 +53,12 @@ const App = () => {
           setStyles({...styles, fontSize: e.target.value+"px"});
         }}
       />
+      <Disabled 
+        onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
+          setDisabled(e.target.checked);
+        }}
+      />
+      
     </div>
   );
 }
