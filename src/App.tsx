@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Color from './components/Color';
 import Background from './components/Background';
 import Opacity from './components/Opacity';
-
+import BorderRadius from './components/BorderRadius';
 
 const App = () => {
   const [styles, setStyles] = useState({
@@ -39,6 +39,11 @@ const App = () => {
       <Opacity 
         onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
           setStyles({...styles, opacity: e.target.value});
+        }}
+      />
+      <BorderRadius 
+        onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
+          setStyles({...styles, borderRadius: e.target.value+"%"});
         }}
       />
     </div>
