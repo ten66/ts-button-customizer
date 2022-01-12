@@ -21,7 +21,6 @@ const App = () => {
 
   return (
     <div>
-      <p>Button Description (useEffect使ってそれぞれの詳細情報を載せる)</p>
       <input 
         type="button"
         style={styles}
