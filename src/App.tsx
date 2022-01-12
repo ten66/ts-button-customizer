@@ -4,6 +4,7 @@ import Color from './components/Color';
 import Background from './components/Background';
 import Opacity from './components/Opacity';
 import BorderRadius from './components/BorderRadius';
+import FontSize from './components/FontSize';
 
 const App = () => {
   const [styles, setStyles] = useState({
@@ -44,6 +45,11 @@ const App = () => {
       <BorderRadius 
         onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
           setStyles({...styles, borderRadius: e.target.value+"%"});
+        }}
+      />
+      <FontSize 
+        onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
+          setStyles({...styles, fontSize: e.target.value+"px"});
         }}
       />
     </div>
