@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ts-button-customizer/static/css/main.e6c13ad2.css",
+    "main.js": "/ts-button-customizer/static/js/main.27059a01.js",
+    "static/js/787.0ceaca70.chunk.js": "/ts-button-customizer/static/js/787.0ceaca70.chunk.js",
+    "index.html": "/ts-button-customizer/index.html",
+    "main.e6c13ad2.css.map": "/ts-button-customizer/static/css/main.e6c13ad2.css.map",
+    "main.27059a01.js.map": "/ts-button-customizer/static/js/main.27059a01.js.map",
+    "787.0ceaca70.chunk.js.map": "/ts-button-customizer/static/js/787.0ceaca70.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.27059a01.js"
+  ]
+}
