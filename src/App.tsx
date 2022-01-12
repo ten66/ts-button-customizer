@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import Color from './components/Color';
+import Background from './components/Background';
 
 
 const App = () => {
@@ -27,6 +28,11 @@ const App = () => {
       <Color 
         onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
           setStyles({...styles, color: e.target.value});
+        }}
+      />
+      <Background 
+        onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
+          setStyles({...styles, background: e.target.value});
         }}
       />
     </div>
