@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 
+import Color from './components/Color';
+
+
 const App = () => {
   const [styles, setStyles] = useState({
     color: "black",
@@ -13,14 +16,18 @@ const App = () => {
 
   return (
     <div>
-      <h1>React + TypeScript</h1>
-      <h2>関数コンポーネント練習用</h2>
-
+      <p>Button Description (useEffect使ってそれぞれの詳細情報を載せる)</p>
       <input 
         type="button"
         style={styles}
         disabled={disabled}
         value={text}
+      />
+
+      <Color 
+        onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
+          setStyles({...styles, color: e.target.value});
+        }}
       />
     </div>
   );
