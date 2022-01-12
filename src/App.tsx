@@ -6,6 +6,7 @@ import Opacity from './components/Opacity';
 import BorderRadius from './components/BorderRadius';
 import FontSize from './components/FontSize';
 import Disabled from './components/Disabled';
+import Text from './components/Text';
 
 const App = () => {
   const [styles, setStyles] = useState({
@@ -58,7 +59,11 @@ const App = () => {
           setDisabled(e.target.checked);
         }}
       />
-      
+      <Text 
+        onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
+          setText(e.target.value);
+        }}
+      />
     </div>
   );
 }
